@@ -8,9 +8,59 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/addBtn"
+                android:layout_toRightOf="@+id/cost"
+                android:layout_toEndOf="@+id/cost" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/$"
+                android:textSize="24sp"
+                android:layout_alignTop="@+id/cost"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="6dp" />
+
+            <EditText
+                android:id="@+id/cost"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/cost"
+                android:layout_marginTop="208dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cost"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="@string/add" />
+        </RelativeLayout>
 
     </LinearLayout>
 

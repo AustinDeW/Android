@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Where My Money Go</string>
+    <string name="cost">I Spent</string>
+    <string name="what">On What</string>
+    <string name="$">$</string>
+    <string name="add">Add</string>
 </resources>
