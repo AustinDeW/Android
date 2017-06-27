@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">100 Days Of Code Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblStartDate"><u>Starting Date</u></string>
+    <string name="lblEndDate"><u>Ending Date</u></string>
+    <string name="btnSubmit">Submit</string>
+    <string name="lblTitle">100 Days of Code</string>
+    <string name="imgCircle">Circle</string>
+    <string name="lblDaysToGo">Days To Go!</string>
+    <string name="lblDefaultDaysToGo">99</string>
+    <string name="btnLblChangeStartDate">Change Starting Date</string>
+    <string name="defaultDateText">00/00/00</string>
+</resources>

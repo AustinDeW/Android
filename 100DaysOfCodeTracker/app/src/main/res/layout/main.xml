@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/days_left_bg" android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:contentDescription="@string/imgCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@mipmap/circle_outline_transparent_4"
+            android:id="@+id/imgVCircleOutline"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:text="@string/lblDefaultDaysToGo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="78sp"
+            android:id="@+id/txtVDaysToGo"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+        <TextView
+            android:text="@string/lblDaysToGo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            android:id="@+id/txtVDaysToGoLbl"
+            android:layout_below="@+id/imgVCircleOutline"
+            android:layout_alignEnd="@+id/imgVCircleOutline"/>
+
+        <Button
+            android:text="@string/btnLblChangeStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4c4c4c"
+            android:id="@+id/btnChangeStartDate" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txtVEndDate"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/defaultDateText"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="24dp"
+            android:layout_alignBaseline="@+id/txtVStartDate"
+            android:layout_alignBottom="@+id/txtVStartDate" android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/txtVStartDate"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/defaultDateText"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="24dp"
+            android:layout_above="@+id/imgVCircleOutline" android:layout_alignParentStart="true"
+            android:layout_marginBottom="53dp"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" - "
+            android:textSize="32sp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignBaseline="@+id/txtVStartDate"
+            android:layout_alignBottom="@+id/txtVStartDate" android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:text="@string/lblTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="114dp"-->
+        <!--android:textSize="28sp"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textAlignment="center"-->
+        <!--android:id="@+id/txtVDaysRemaining" android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<TextView-->
+        <!--android:text="@string/lblTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="164dp"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textAlignment="center"-->
+        <!--android:id="@+id/txtVstartingDate" android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<TextView-->
+        <!--android:text="@string/lblTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="214dp"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textAlignment="center"-->
+        <!--android:id="@+id/txtVendingDate" android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+</RelativeLayout>
